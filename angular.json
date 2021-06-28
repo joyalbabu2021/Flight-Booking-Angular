@@ -58,8 +58,8 @@
               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js",
-              "src/assets/adminlte/dist/js/adminlte.min.js",
-              "src/assets/adminlte/dist/js/demo.js"
+              "src/assets/adminlte/dist/js/adminlte.min.js"
+             
               
             ]
           },
