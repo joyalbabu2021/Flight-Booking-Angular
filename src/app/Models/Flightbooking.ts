@@ -24,7 +24,7 @@ export class Flightbooking {
     Toplace!: string;
     Mealtype!: string;
     ReturnMealtype!: string;
-    Pnrnumber!: number;
+    Pnrnumber!: string;
     bookeddate!: Date;
     numberofseats!: number;
     passengerdetails!:passengerdetails[];

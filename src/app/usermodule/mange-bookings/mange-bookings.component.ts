@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/services/shared-service.service';
 
 @Component({
   selector: 'app-mange-bookings',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MangeBookingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sharedService:SharedService) { 
+console.log("MangeBookingConstructor-Model is",sharedService.GetUserSelectedFlightsData());
+
+  }
 
   ngOnInit(): void {
   }

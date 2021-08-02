@@ -15,6 +15,7 @@ export class FlightBookingComponent implements OnInit {
   SearchBookingForm!: FormGroup;
   flightBookings!:Flightbooking[];
   submitted = false;
+  
   constructor( private bookingHistoryService: BookingHistoryService,private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {

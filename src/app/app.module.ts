@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule ,Routes} from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListEmployeesComponent } from './employees/list-employees.component';
@@ -21,6 +21,7 @@ import { BookFlightComponent } from './usermodule/book-flight/book-flight.compon
 import { ManageSchedulesComponent } from './adminmodule/manage-schedules/manage-schedules.component';
 import { ManageDiscountsComponent } from './adminmodule/manage-discounts/manage-discounts.component';
 import { ManageAirlinesComponent } from './adminmodule/manage-airlines/manage-airlines.component';
+import { SearchFlightsComponent } from './usermodule/search-flights/search-flights.component';
 
 
 const appRoutes:Routes=[
@@ -36,6 +37,7 @@ const appRoutes:Routes=[
   {path:'ManageSchedules',component:ManageSchedulesComponent},
   {path:'ManageDiscounts',component:ManageDiscountsComponent},
   {path:'ManageAirlines',component:ManageAirlinesComponent},
+  {path:'SearchFlights',component:SearchFlightsComponent},
   {path:'',redirectTo:'/DashBoard',pathMatch:'full'}
  
 ]
@@ -57,7 +59,8 @@ const appRoutes:Routes=[
     BookFlightComponent,
     ManageSchedulesComponent,
     ManageDiscountsComponent,
-    ManageAirlinesComponent
+    ManageAirlinesComponent,
+    SearchFlightsComponent
     
   ],
   imports: [
@@ -65,6 +68,7 @@ const appRoutes:Routes=[
     CommonModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],

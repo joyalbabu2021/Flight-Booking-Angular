@@ -4,12 +4,9 @@
 </div>
 <form [formGroup]="SearchBookingForm" (ngSubmit)="onSubmit()">
     <div class="form-row">
-        
-        
         <div class="form-group col-md-4">
            
             <input type="text" formControlName="emailid" class="form-control"  placeholder="Enter Email Id"/>
-            
             <div *ngIf="submitted && f.emailid.invalid && f.emailid.errors" class="text-danger">
                 <div *ngIf="f.emailid.errors.required">Email is required!!</div>
                 <div *ngIf="f.emailid.errors.email">Email must be a valid email address!!</div>
